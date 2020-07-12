@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Home from './components/home'
-import {BrowserRouter, Switch, Route} from "react-router-dom"
+import {BrowserRouter, Switch, Route, Link} from "react-router-dom"
 import { Provider } from 'react-redux';
 import store from './redux/store'
 
@@ -19,7 +19,7 @@ function App() {
           <p>Here</p>
           <Switch>
             <Route path="/page">
-              
+              <Link to="/">Go back</Link>
             </Route>
             <Route path="/">
               <div className="App">

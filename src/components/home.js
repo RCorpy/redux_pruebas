@@ -9,7 +9,7 @@ function Home(props){
     <div>
         <p>Im the home component</p>
         <p>{props.state.visibility}</p>
-        <p><Link to="/page">Go to Page</Link></p>
+        <p><Link to="/page" onClick={props.action1} >Go to Page</Link></p>
     </div>)
 } 
 
